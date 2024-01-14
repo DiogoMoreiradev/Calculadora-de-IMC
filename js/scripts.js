@@ -4,12 +4,12 @@ var firstPage = document.querySelector(".page-1");
 var secondPage = document.querySelector(".page-2");
 var form = document.getElementById("form");
 
-var heightInput = document.getElementById("heightInput");
-var weightInput = document.getElementById("weightInput");
-var IMCValue = document.getElementById("IMCValue");
+var heightInput = document.getElementById("height-input");
+var weightInput = document.getElementById("weight-input");
+var IMCValue = document.getElementById("IMC-value");
 var classification = document.getElementById("classification");
 
-var IMCBtn = document.getElementById("btnIMC");
+var IMCBtn = document.getElementById("btn-IMC");
 var quitBtn = document.getElementById("quitBtn");
 
 form.addEventListener("submit", (e) => {
@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
 const showIMC = () => {
   if (heightInput.value === "" || weightInput.value === "") {
     // Modal
-    let modalAlert = document.getElementById("modalAlert");
+    let modalAlert = document.getElementById("modal-alert");
     modalAlert.style.opacity = "1";
     modalAlert.style.transform = "scale(1.2)";
 
@@ -75,7 +75,5 @@ const backToFirstPage = () => {
   secondPage.style.display = "none";
 };
 
-btnIMC.addEventListener("click", showIMC);
+IMCBtn.addEventListener("click", showIMC);
 quitBtn.addEventListener("click", backToFirstPage);
-
-
