@@ -9,8 +9,8 @@ var weightInput = document.getElementById("weight-input");
 var IMCValue = document.getElementById("IMC-value");
 var classification = document.getElementById("classification");
 
-var IMCBtn = document.getElementById("btn-IMC");
-var quitBtn = document.getElementById("quitBtn");
+var IMCBtn = document.getElementById("IMC-btn");
+var quitBtn = document.getElementById("quit-btn");
 
 form.addEventListener("submit", (e) => {
   // Impede o formulário de recarregar a página

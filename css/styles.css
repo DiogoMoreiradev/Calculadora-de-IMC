@@ -44,7 +44,7 @@ form h1 {
     margin: .2rem 0 .5rem 0;
     align-self: start;
 }
-#btn-IMC {
+#IMC-btn {
     padding: 10px 20px;
     margin-top: 2rem;
     display: flex;
@@ -58,7 +58,7 @@ form h1 {
     font-size: 1rem;
     transition: 0.3s;
 }
-#btn-IMC:hover {
+#IMC-btn:hover {
     background-color: #003b3b;
 }
 #reset-btn {
@@ -114,7 +114,7 @@ table tr td{
     padding: 10px;
     border: 1px solid ;
 }
-#quitBtn {
+#quit-btn {
     padding: 10px 20px;
     border: none;
     background-color: #cc2a36;
@@ -126,10 +126,10 @@ table tr td{
     transition: .3s;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-#quitBtn:hover {
+#quit-btn:hover {
     background-color: #511015;
 }
-#IMCValue {
+#IMC-value {
     color: #b37400;
 }
 #classification {
