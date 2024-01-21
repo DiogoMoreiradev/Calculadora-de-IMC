@@ -49,18 +49,23 @@ const showIMC = () => {
   // Classificações
   switch (true) {
     case result < 18.5:
+      classification.style.color = "#B80000";
       classification.textContent = "Magresa";
       break;
-    case result >= 18.5 && result < 24.9:
+      case result >= 18.5 && result < 24.9:
+      classification.style.color = "#65B741";
       classification.textContent = "Normal";
       break;
     case result >= 25 && result < 29.9:
+      classification.style.color = "#FFB534";
       classification.textContent = "Sobrepeso";
       break;
     case result >= 30 && result < 39.9:
+      classification.style.color = "#D04848";
       classification.textContent = "Obesidade";
       break;
     default:
+      classification.style.color = "#750E21";
       classification.textContent = "Obesidade Grave";
   }
 
